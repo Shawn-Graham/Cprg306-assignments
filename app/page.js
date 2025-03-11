@@ -14,7 +14,7 @@ export default function Home(){
 <li><Link className="text-xl hover:text-blue-700"  href="/week-6">Week 6</Link></li>
 <li><Link className="text-xl hover:text-blue-700"  href="/week-7">Week 7</Link></li>
 <li><Link className="text-xl hover:text-blue-700"  href="/week-8">Week 8</Link></li>
-<li>Week 9</li>
+<li><Link className="text-xl hover:text-blue-700"  href="/week-9">Week 9</Link></li>
 <li>Week 10</li>
 </ul>
     </div>
