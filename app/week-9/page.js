@@ -34,18 +34,18 @@ const Page = () => {
   }
 
   return (
-    <div classname="textAlign left">
+    <div className="textAlign left">
       {user ? (
         <>
-        <h1 classname="text-4xl font-bold mb-5">Shopping List App</h1>
-          <div classname="text-lg">
+        <h1 className="text-4xl font-bold mb-5">Shopping List App</h1>
+          <div className="text-lg">
           <p>Signed in as {user.displayName} ({user.email})</p>
-          <p><button classname="text-lg hover:underline" onClick={handleSignOut}>Sign Out</button></p>
-         <p><button classname="text-lg hover:underline" onClick={() => router.push("/week-8")}>Go to shopping list</button></p>
+          <p><button className="text-lg hover:underline" onClick={handleSignOut}>Sign Out</button></p>
+         <p><button className="text-lg hover:underline" onClick={() => router.push("/week-8")}>Go to shopping list</button></p>
             </div>
         </>
       ) : (
-        <><h1 classname="text-4xl font-bold mb-5">Shopping List App</h1><button onClick={handleSignIn}>Sign in with GitHub</button></>
+        <><h1 className="text-4xl font-bold mb-5">Shopping List App</h1><button onClick={handleSignIn}>Sign in with GitHub</button></>
       )}
     </div>
   );
