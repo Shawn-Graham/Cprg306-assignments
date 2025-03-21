@@ -1,9 +1,9 @@
 "use client";
 import React, { useState } from 'react';
-import ItemList from '../week-9/item-list';
-import NewItem from '../week-9/new-item';
-import itemsData from '../week-9/items.json';
-import MealIdeas from '../week-9/meal-ideas';
+import ItemList from '../week-10/item-list';
+import NewItem from '../week-10/new-item';
+import itemsData from '../week-10/items.json';
+import MealIdeas from '../week-10/meal-ideas';
 
 const Page = () => {
   // Initialize the state variable with data from items.json
