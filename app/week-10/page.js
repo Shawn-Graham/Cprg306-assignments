@@ -41,7 +41,7 @@ const Page = () => {
           <div className="text-lg">
           <p>Signed in as {user.displayName} ({user.email})</p>
           <p><button className="text-lg hover:underline" onClick={handleSignOut}>Sign Out</button></p>
-         <p><button className="text-lg hover:underline" onClick={() => router.push("/week-8")}>Go to shopping list</button></p>
+         <p><button className="text-lg hover:underline" onClick={() => router.push("week-10/shopping-list")}>Go to shopping list</button></p>
             </div>
         </>
       ) : (

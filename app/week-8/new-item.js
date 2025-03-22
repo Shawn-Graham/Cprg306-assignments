@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 
-export default function GroceryForm() {
+export default function NewItem({onAddItem}) {
   const [name, setName] = useState("");
   const [category, setCategory] = useState("produce");
   const [quantity, setQuantity] = useState(1);
@@ -14,7 +14,7 @@ export default function GroceryForm() {
   const handleSubmit = (event) => {
     event.preventDefault();
     const item = { name, category, quantity };
-    console.log(item);
+    onAddItem(item);
     alert(`Item: ${name}\nCategory: ${category}\nQuantity: ${quantity}`);
     setName("");
     setCategory("produce");
@@ -67,7 +67,7 @@ export default function GroceryForm() {
             onChange={(e) => setCategory(e.target.value)}
             className="ml-1 border-2 border-gray-300 p-2 rounded-lg font-sans"
           >
-            <option value = "" disabled>Category</option>
+            <option value disabled>Category</option>
             <option value="produce">Produce</option>
             <option value="dairy">Dairy</option>
             <option value="bakery">Bakery</option>

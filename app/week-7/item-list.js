@@ -49,9 +49,9 @@ function ItemList({ items }) { // Receive items as a prop
 
       {/* Render Items */}
       <ul style={{ listStyle: "none", padding: 0 }}>
-        {getSortedItems().map((item) => (
+        {getSortedItems().map((item, index) => (
           <Item
-            key={item.id}
+            key={item.id ?? index}
             name={item.name}
             quantity={item.quantity}
             category={item.category}
