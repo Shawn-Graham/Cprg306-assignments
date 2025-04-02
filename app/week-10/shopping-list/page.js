@@ -24,7 +24,7 @@ const Page = () => {
     if (user?.uid) {
       loadItems();
     }
-  }, [user]);
+  }, [user, loadItems]);
 
   // Handle adding a new item
   const handleAddItem = async (newItem) => {
